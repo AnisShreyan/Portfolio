@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function SocialIcons({icons, link}) {
+function SocialIcons({ icons, link }) {
   return (
     <>
-    <a href={link} target="_blank">
-    <img src={icons} />
-    </a>
+      <a href={link} target="_blank">
+        <img src={icons} />
+      </a>
     </>
-  )
+  );
 }
 
-export default SocialIcons
+export default SocialIcons;

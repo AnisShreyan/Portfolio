@@ -1,17 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from "react-scroll";
 
-function HeroSection() {
+export function HeroSection() {
   return (
     <div className="HeroSection" id="hero">
       <div className="hero-container">
         <div className="hero-text-container">
           <motion.h3
             initial={{
-              x: -500,
+              x: -200,
             }}
-            animate={{ x: 0 }}
+            whileInView={{ x: 0 }}
             transition={{ duration: 1.5 }}
           >
             Welcome to
@@ -20,16 +20,17 @@ function HeroSection() {
             initial={{
               y: 100,
             }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1.5, type: "spring" }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1, type: "keyframes" }}
           >
             Anis' Website
           </motion.h1>
+
           <motion.p
             initial={{
-              x: 500,
+              x: 200,
             }}
-            animate={{ x: 0 }}
+            whileInView={{ x: 0 }}
             transition={{ duration: 1.5 }}
           >
             Frontend Developer
@@ -37,13 +38,13 @@ function HeroSection() {
         </div>
         <ul>
           <li>
-            <a href="#about-me"> About Me</a>
+            <Link to="about-me" duration={500} smooth={true}> About Me</Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link to="projects" duration={500} smooth={true}>Projects</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="contact" duration={500} smooth={true}>Contact</Link>
           </li>
         </ul>
       </div>
@@ -51,4 +52,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+// export default HeroSection;

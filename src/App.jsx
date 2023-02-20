@@ -1,7 +1,7 @@
 import "./App.css";
 import AboutMe from "./Section/AboutMe";
 import Contact from "./Section/Contact";
-import HeroSection from "./Section/HeroSection";
+import { HeroSection } from "./Section/HeroSection";
 import Potrater from "./Section/Potrater";
 import Projects from "./Section/Projects";
 
