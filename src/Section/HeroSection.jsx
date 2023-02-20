@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function HeroSection() {
   return (
-    <div className="HeroSection">
+    <div className="HeroSection" id="hero">
       <div className="hero-container">
         <div className="hero-text-container">
           <motion.h3
@@ -22,17 +23,7 @@ function HeroSection() {
             animate={{ y: 0 }}
             transition={{ duration: 1.5, type: "spring" }}
           >
-            Anis
-            <span
-              style={{
-                fontStyle: "italic",
-                marginLeft: "-30px",
-                marginRight: "40px",
-              }}
-            >
-              '
-            </span>
-            Website
+            Anis' Website
           </motion.h1>
           <motion.p
             initial={{
@@ -45,9 +36,15 @@ function HeroSection() {
           </motion.p>
         </div>
         <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <a href="#about-me"> About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
