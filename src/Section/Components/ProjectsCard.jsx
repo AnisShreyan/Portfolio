@@ -1,13 +1,13 @@
 import React from 'react'
-import ytClone from "./imgs/yt.png"
+// import ytClone from "./imgs/yt.png"
 
-function ProjectsCard() {
+function ProjectsCard(props) {
   return (
     <>
-    <a href="https://yt-clone.anis.ink/" target='_blank'>
+    <a href={props.link} target='_blank'>
     <div className="projects-cards">
-        <img src={ytClone} />
-        <h3>YouTube Clone</h3>
+        <img src={props.image} />
+        <h3>{props.name}</h3>
     </div>
     </a>
     </>

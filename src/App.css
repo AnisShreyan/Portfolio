@@ -231,6 +231,10 @@
   flex-wrap: wrap;
 }
 
+.projects-container a{
+  margin: 20px;
+}
+
 .projects-cards img {
   max-width: 350px;
   border-radius: 10px;
@@ -293,5 +297,8 @@
 @media (max-width: 900px) {
   .hero-text-container p {
     margin-top: 0;
+  }
+  .projects{
+    margin: 20px 0 120px;
   }
 }
